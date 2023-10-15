@@ -1,11 +1,12 @@
-package com.example.projectmacro8
+package com.example.aplikasisafe.Pelatihan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.aplikasisafe.R
 
-class VerifikasiActivity1 : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_verifikasi1)
+        setContentView(R.layout.activity_register)
     }
 }
