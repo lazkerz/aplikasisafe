@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarPelatihanActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="140dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/teks_pt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/daftar"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bell2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/ic_bell" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_nama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Nama Lengkap"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout01" />
+
+    <EditText
+        android:id="@+id/editnama1"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text2"
+        android:hint="Nama Lengkap"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/text_nama1"
+        app:layout_constraintTop_toBottomOf="@+id/text_nama1" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textIdentitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="No Identitas"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editnama1"
+        app:layout_constraintTop_toBottomOf="@+id/editnama1" />
+
+    <EditText
+        android:id="@+id/editIdentitas"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text2"
+        android:hint="No Identitas"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/textIdentitas"
+        app:layout_constraintTop_toBottomOf="@+id/textIdentitas" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textkontak1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="No. Hp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editIdentitas"
+        app:layout_constraintTop_toBottomOf="@+id/editIdentitas" />
+
+    <EditText
+        android:id="@+id/editkontak"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text2"
+        android:hint="Nomor HP"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/textkontak1"
+        app:layout_constraintTop_toBottomOf="@+id/textkontak1" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textemail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Email"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editkontak"
+        app:layout_constraintTop_toBottomOf="@+id/editkontak" />
+
+    <EditText
+        android:id="@+id/editemail01"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text2"
+        android:hint="Email Anda"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/textemail1"
+        app:layout_constraintTop_toBottomOf="@+id/textemail1" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textAlasan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Alasan Mengikuti"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/editemail01"
+        app:layout_constraintTop_toBottomOf="@+id/editemail01" />
+
+    <EditText
+        android:id="@+id/editAlasan"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_edit_text2"
+        android:hint="Tulis alasan Anda"
+        android:padding="12dp"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/textAlasan"
+        app:layout_constraintTop_toBottomOf="@+id/textAlasan" />
+
+    <TextView
+        android:id="@+id/text_pesan_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="*Ceritakan pengalaman dan lainnya"
+        android:textColor="@color/grey"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/editAlasan"
+        app:layout_constraintTop_toBottomOf="@+id/editAlasan" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDaftar1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/bg_lengkung"
+        android:text="@string/daftar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_pesan_upload" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

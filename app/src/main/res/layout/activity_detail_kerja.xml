@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailKerjaActivity">
+
+    <LinearLayout
+        android:id="@+id/bar_menu1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="80dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/teks_pt0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/pt2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/bell1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/ic_bell" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ilustrasi_dev"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/coding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_menu1" />
+
+    <TextView
+        android:id="@+id/pekerjaan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/kerja2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ilustrasi_dev"
+        app:layout_constraintTop_toTopOf="@+id/ilustrasi_dev" />
+
+    <TextView
+        android:id="@+id/nama_pt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pt2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/pekerjaan1"
+        app:layout_constraintTop_toBottomOf="@+id/pekerjaan1" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jum_gaji" />
+
+    <TextView
+        android:id="@+id/text_gaji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/judul_gaji"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ilustrasi_dev"
+        app:layout_constraintTop_toBottomOf="@+id/ilustrasi_dev" />
+
+    <TextView
+        android:id="@+id/jum_gaji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/gaji"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_gaji"
+        app:layout_constraintTop_toBottomOf="@+id/text_gaji" />
+
+    <TextView
+        android:id="@+id/judul_desc_kerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:text="@string/judul_desk_pekerjaan"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/desc_kerja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/desk_pekerjaan"
+        app:layout_constraintStart_toStartOf="@+id/judul_desc_kerja"
+        app:layout_constraintTop_toBottomOf="@+id/judul_desc_kerja" />
+
+    <TextView
+        android:id="@+id/benefit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/detail_benefit"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/desc_kerja"
+        app:layout_constraintTop_toBottomOf="@+id/desc_kerja" />
+
+    <TextView
+        android:id="@+id/detaiil_benefit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/benefit"
+        app:layout_constraintStart_toStartOf="@+id/benefit1"
+        app:layout_constraintTop_toBottomOf="@+id/benefit1" />
+
+    <TextView
+        android:id="@+id/jdl_kota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/jdl_kota1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/detaiil_benefit1"
+        app:layout_constraintTop_toBottomOf="@+id/detaiil_benefit1" />
+
+    <TextView
+        android:id="@+id/kota1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kota_kerja1"
+        app:layout_constraintStart_toStartOf="@+id/jdl_kota"
+        app:layout_constraintTop_toBottomOf="@+id/jdl_kota" />
+
+    <TextView
+        android:id="@+id/tentang_pekerjaan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/judul_desk_pekerjaan"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kota1" />
+
+    <TextView
+        android:id="@+id/desc_pekerjaan"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/tentang_perusahaan"
+        app:layout_constraintStart_toStartOf="@+id/tentang_pekerjaan"
+        app:layout_constraintTop_toBottomOf="@+id/tentang_pekerjaan" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_pekerjaan"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_ya"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

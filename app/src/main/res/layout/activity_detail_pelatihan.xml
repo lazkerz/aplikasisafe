@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPelatihanActivity">
+
+    <LinearLayout
+        android:id="@+id/bar_menu1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="80dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/teks_pt0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pelatihan untuk Anda"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ilustrasi_dev"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/coding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar_menu1" />
+
+    <TextView
+        android:id="@+id/pelatihan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Belajar Fundamental HTML"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ilustrasi_dev"
+        app:layout_constraintTop_toTopOf="@+id/ilustrasi_dev" />
+
+    <TextView
+        android:id="@+id/nama_pt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pt2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/pelatihan1"
+        app:layout_constraintTop_toBottomOf="@+id/pelatihan1" />
+
+
+
+    <TextView
+        android:id="@+id/textWaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Timeline Pendaftaran"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ilustrasi_dev"
+        app:layout_constraintTop_toBottomOf="@+id/ilustrasi_dev" />
+
+    <TextView
+        android:id="@+id/waktuPelatihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="23 Agustus - 15 September 2023"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textWaktu"
+        app:layout_constraintTop_toBottomOf="@+id/textWaktu" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waktuPelatihan" />
+
+    <TextView
+        android:id="@+id/judul_desc_pelatihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:text="Deskripsi Pelatihan"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/desc_pelatihan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/desc_pelatihan"
+        app:layout_constraintStart_toStartOf="@+id/judul_desc_pelatihan"
+        app:layout_constraintTop_toBottomOf="@+id/judul_desc_pelatihan" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_pelatihan1" />
+
+    <TextView
+        android:id="@+id/text_timenline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Timeline Pelatihan"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/desc_pelatihan1"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/detail_Waktunya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/timeline_pelatihan"
+        app:layout_constraintStart_toStartOf="@+id/text_timenline"
+        app:layout_constraintTop_toBottomOf="@+id/text_timenline" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_daftarPelatihan"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:text="@string/daftar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/btn_ya"
+        app:layout_constraintTop_toBottomOf="@+id/detail_Waktunya" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
