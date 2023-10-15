@@ -7,7 +7,7 @@
     tools:context=".Pelatihan.VerifikasiActivity1">
 
     <ImageView
-        android:contentDescription="@string/ya"
+        android:contentDescription="ya"
         android:id="@+id/slide_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/lewati"
+        android:text="lewati"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.753"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:contentDescription="@string/lewati"
+        android:contentDescription="lewati"
         android:id="@+id/imagechubs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/katapendukung1"
+        android:text="katapendukung1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagechubs"/>
@@ -59,7 +59,7 @@
         android:layout_marginStart="72dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/btn_ya"
-        android:text="@string/ya"
+        android:text="ya"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:background="@drawable/btn_tidak"
-        android:text="@string/tidak"
+        android:text="tidak"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
