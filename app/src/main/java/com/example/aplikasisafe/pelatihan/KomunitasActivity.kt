@@ -1,12 +1,12 @@
-package com.example.aplikasisafe.Pelatihan
+package com.example.aplikasisafe.pelatihan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.aplikasisafe.R
 
-class RegisterActivity : AppCompatActivity() {
+class KomunitasActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_komunitas)
     }
 }

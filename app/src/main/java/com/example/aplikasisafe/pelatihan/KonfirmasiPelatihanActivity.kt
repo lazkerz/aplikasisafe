@@ -1,4 +1,4 @@
-package com.example.aplikasisafe.Pelatihan
+package com.example.aplikasisafe.pelatihan
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

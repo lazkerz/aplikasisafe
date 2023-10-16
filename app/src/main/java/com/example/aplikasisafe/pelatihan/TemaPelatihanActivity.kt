@@ -1,12 +1,12 @@
-package com.example.aplikasisafe.Pelatihan
+package com.example.aplikasisafe.pelatihan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.aplikasisafe.R
 
-class PendaftaranBerhasilActivity : AppCompatActivity() {
+class TemaPelatihanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pendaftaran_berhasil)
+        setContentView(R.layout.activity_tema_pelatihan)
     }
 }

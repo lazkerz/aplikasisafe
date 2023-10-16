@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginBottom="16dp">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/card_kerja"
         android:gravity="center_vertical"
-        android:padding="12dp"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="32dp">
 
-        <ImageView
-            android:id="@+id/iv_kerja"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:contentDescription="@string/pt1"
-            android:src="@drawable/coding" />
-
-        <Space
-            android:layout_width="24dp"
-            android:layout_height="wrap_content" />
 
         <LinearLayout
+            android:layout_marginStart="8dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -33,31 +21,42 @@
                 android:id="@+id/tv_kerja"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pt1"
+                android:text="BELAJAR FUNDAMENTAL HTML"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
+                android:layout_marginTop="8dp"
                 android:id="@+id/tv_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pt1"
+                android:text="HTML adalah bahasa markup standar untuk \nmembuat halaman website. Bahasa ini \nberfungsi untuk membuat struktur website \nhingga menyusun format teks dan gambar \npada halaman web."
                 android:textColor="@color/black"
                 android:textSize="12sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_save"/>
+            <ImageView
+                android:layout_marginTop="64dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow"/>
 
         </LinearLayout>
 
-        <Space
-            android:layout_width="72dp"
-            android:layout_height="wrap_content" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="top"
-            android:contentDescription="@string/simpan"
-            android:src="@drawable/ic_save" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

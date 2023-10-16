@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pelatihan.TemaPelatihanActivity">
+    tools:context=".pelatihan.KomunitasActivity">
 
     <LinearLayout
-        android:id="@+id/bar_temaPelatihan"
+        android:id="@+id/bar_komunitas"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="4dp"
@@ -28,24 +28,32 @@
 
         <SearchView
             android:id="@+id/searchPelatihan"
-            android:layout_width="320dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/searchview_bg"
             android:iconifiedByDefault="false"
             android:queryBackground="@android:color/transparent"
-            android:queryHint="Cari bidang pekerjaan" />
+            android:queryHint="Cari Komunitas" />
+
+        <ImageView
+            android:id="@+id/riwayat_komunitas"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bell"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/layoutKomunitas"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="60dp"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bar_temaPelatihan">
+        app:layout_constraintTop_toBottomOf="@+id/bar_komunitas">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_pelatihan"
@@ -54,7 +62,7 @@
             android:layout_marginEnd="40dp"
             android:textColor="@color/white"
             android:background="@drawable/btn_act_blue"
-            android:text="Pelatihan"
+            android:text="Komunitas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/space1" />
 
@@ -62,29 +70,27 @@
             android:id="@+id/btn_riwayat"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_act_grey"
-            android:text="Riwayat"
-            android:textColor="@color/black"
+            android:background="@drawable/btn_outline_blue"
+            android:text="Kegiatan"
+            android:textColor="@color/blue"
             app:layout_constraintEnd_toStartOf="@+id/btn_simpan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/space1" />
     </LinearLayout>
 
     <ScrollView
-        android:padding="16dp"
         android:id="@+id/scroll_pelatihan"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="144dp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        tools:layout_editor_absoluteX="-16dp">
+        android:layout_marginTop="132dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/layoutKomunitas">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_example"
+            android:id="@+id/rv_"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            tools:listitem="@layout/pelatihan_item"/>
+            tools:listitem="@layout/pelatihan_item" />
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

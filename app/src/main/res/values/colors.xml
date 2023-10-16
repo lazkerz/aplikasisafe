@@ -4,10 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red1">#FFDC4A4A</color>
     <color name="red">#FF5E5B</color>
-    <color name="grey">#7C7C7C</color>
+    <color name="grey">#D9D9D9</color>
     <color name="RED">#FF5E5B</color>
     <color name="grey_light">#EDEDED</color>
     <color name="green">#11DC4A</color>
     <color name="orange">#FC844D</color>
     <color name="blue">#447186</color>
+<!--    <color name="teal_200">#000000</color>-->
 </resources>

@@ -1,12 +1,12 @@
-package com.example.aplikasisafe.Pelatihan
+package com.example.aplikasisafe.pelatihan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.aplikasisafe.R
 
-class VerifikasiActivity1 : AppCompatActivity() {
+class JobActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_verifikasi1)
+        setContentView(R.layout.activity_job)
     }
 }

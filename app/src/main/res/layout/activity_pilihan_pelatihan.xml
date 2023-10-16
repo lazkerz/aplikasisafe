@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pelatihan.PilihanPelatihanActivity">
+    tools:context=".pelatihan.PilihanPelatihanActivity">
     <LinearLayout
         android:id="@+id/bar_temaPelatihan"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:padding="16dp"
-        android:background="@color/grey_light"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -53,19 +52,19 @@
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="40dp"
-            android:background="@drawable/btn_ya"
-            android:textColor="@color/white"
-            android:text="Pelatihan"
+            android:background="@drawable/btn_outline_blue"
+            android:textColor="@color/blue"
+            android:text="Simpan"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/space1" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_simpan1"
+            android:id="@+id/btnKategori"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_tidak"
-            android:text="@string/simpan"
-            android:textColor="@color/red"
+            android:background="@drawable/btn_act_blue"
+            android:text="@string/kategori"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toStartOf="@+id/btn_simpan"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/space1" />
@@ -85,6 +84,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="12dp"
-            tools:listitem="@layout/kerja_item" />
+            tools:listitem="@layout/materi_item" />
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

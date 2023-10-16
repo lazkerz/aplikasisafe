@@ -12,43 +12,55 @@
         android:theme="@style/Theme.AplikasiSafe"
         tools:targetApi="31">
         <activity
-            android:name=".Pelatihan.LoginActivity"
+            android:name=".pelatihan.KegiatanActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.RegisterActivity"
+            android:name=".pelatihan.KomunitasActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.VerifikasiActivity1"
+            android:name=".pelatihan.StartedActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.TemaPelatihanActivity"
+            android:name=".pelatihan.JobActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.PilihanPelatihanActivity"
+            android:name=".pelatihan.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.PendaftaranBerhasilActivity"
+            android:name=".pelatihan.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.PelatihanberhasilActivity"
+            android:name=".pelatihan.VerifikasiActivity1"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.KonfirmasiPelatihanActivity"
+            android:name=".pelatihan.TemaPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.JobActivty"
+            android:name=".pelatihan.PilihanPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.DetailPelatihanActivity"
+            android:name=".pelatihan.PendaftaranBerhasilActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.DetailKerjaActivity"
+            android:name=".pelatihan.PelatihanberhasilActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.DaftarPelatihanActivity"
+            android:name=".pelatihan.KonfirmasiPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.DaftarKerjaActivity"
+            android:name=".pelatihan.JobActivty"
+            android:exported="false" />
+        <activity
+            android:name=".pelatihan.DetailPelatihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelatihan.DetailKerjaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelatihan.DaftarPelatihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pelatihan.DaftarKerjaActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
