@@ -4,109 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pelatihan.DaftarKerjaActivity">
+    tools:context=".pelatihan.DaftarKegiatanActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/bar_menuKegiatan"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/back2"
+            android:id="@+id/back1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="18dp"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="140dp"
             android:src="@drawable/ic_back" />
 
         <TextView
-            android:id="@+id/teks_pt1"
+            android:id="@+id/teks_pt0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/pt2"
+            android:text="@string/daftar"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/bell2"
+            android:id="@+id/bell1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="112dp"
             android:src="@drawable/ic_bell" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/text_nama"
+        android:id="@+id/textKegiatan_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Nama"
+        android:text="Nama/Tim"
         android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+        app:layout_constraintTop_toBottomOf="@+id/bar_menuKegiatan" />
 
     <EditText
-        android:id="@+id/editnama"
+        android:id="@+id/editKegiatan_nama"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_edit_text2"
-        android:hint="Tulis nama anda"
+        android:hint="Nama atau Tim anda"
         android:padding="12dp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/text_nama"
-        app:layout_constraintTop_toBottomOf="@+id/text_nama" />
+        app:layout_constraintStart_toStartOf="@+id/textKegiatan_nama"
+        app:layout_constraintTop_toBottomOf="@+id/textKegiatan_nama" />
 
     <TextView
         android:textStyle="bold"
-        android:id="@+id/textpendidikan"
+        android:id="@+id/textKegiatan_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Pendidikan"
+        android:text="Email"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/editnama"
-        app:layout_constraintTop_toBottomOf="@+id/editnama" />
+        app:layout_constraintStart_toStartOf="@+id/editKegiatan_nama"
+        app:layout_constraintTop_toBottomOf="@+id/editKegiatan_nama" />
 
     <EditText
-        android:id="@+id/editpendidikan"
+        android:id="@+id/editKegiatan_email"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_edit_text2"
-        android:hint="Pendidikan terakhir"
+        android:hint="Email aktif"
         android:padding="12dp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/textpendidikan"
-        app:layout_constraintTop_toBottomOf="@+id/textpendidikan" />
+        app:layout_constraintStart_toStartOf="@+id/textKegiatan_email"
+        app:layout_constraintTop_toBottomOf="@+id/textKegiatan_email" />
 
     <TextView
         android:textStyle="bold"
-        android:id="@+id/textkontak"
+        android:id="@+id/textKegiatan_nomor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Kontak"
+        android:text="No Hp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/editpendidikan"
-        app:layout_constraintTop_toBottomOf="@+id/editpendidikan" />
+        app:layout_constraintStart_toStartOf="@+id/editKegiatan_email"
+        app:layout_constraintTop_toBottomOf="@+id/editKegiatan_email" />
 
     <EditText
-        android:id="@+id/editkontak"
+        android:id="@+id/editKegiatan_nomor"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="8dp"
@@ -114,70 +113,36 @@
         android:hint="Nomor HP"
         android:padding="12dp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/textkontak"
-        app:layout_constraintTop_toBottomOf="@+id/textkontak" />
+        app:layout_constraintStart_toStartOf="@+id/textKegiatan_nomor"
+        app:layout_constraintTop_toBottomOf="@+id/textKegiatan_nomor" />
 
     <TextView
         android:textStyle="bold"
-        android:id="@+id/textemail1"
+        android:id="@+id/textuploadBerkas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Email"
+        android:text="Upload Syarat Pendaftaran"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/editkontak"
-        app:layout_constraintTop_toBottomOf="@+id/editkontak" />
+        app:layout_constraintStart_toStartOf="@+id/editKegiatan_nomor"
+        app:layout_constraintTop_toBottomOf="@+id/editKegiatan_nomor" />
 
     <EditText
-        android:id="@+id/editemail1"
+        android:id="@+id/edituploadBerkas"
         android:layout_width="320dp"
-        android:layout_height="48dp"
+        android:layout_height="88dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/bg_edit_text2"
-        android:hint="Email"
-        android:padding="12dp"
-        android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/textemail1"
-        app:layout_constraintTop_toBottomOf="@+id/textemail1" />
-
-    <TextView
-        android:textStyle="bold"
-        android:id="@+id/textupload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="Upload Berkas"
-        android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/editemail1"
-        app:layout_constraintTop_toBottomOf="@+id/editemail1" />
-
-    <EditText
-        android:id="@+id/editupload"
-        android:layout_width="320dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="8dp"
+        android:hint="."
         android:background="@drawable/bg_edit_upload"
-        android:padding="12dp"
+        android:padding="24dp"
         android:textSize="13sp"
-        app:layout_constraintStart_toStartOf="@+id/textupload"
-        app:layout_constraintTop_toBottomOf="@+id/textupload" />
+        app:layout_constraintStart_toStartOf="@+id/textuploadBerkas"
+        app:layout_constraintTop_toBottomOf="@+id/textuploadBerkas" />
 
-    <TextView
-        android:id="@+id/text_pesan_upload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/poppins_regular"
-        android:text="*Berkas CV, Portofolio, dan dokumen lainnya"
-        android:textColor="@color/grey"
-        android:textSize="11sp"
-        app:layout_constraintStart_toStartOf="@+id/editupload"
-        app:layout_constraintTop_toBottomOf="@+id/editupload" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_registerKerja"
+        android:id="@+id/btn_daftarKegiatan"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -185,9 +150,7 @@
         android:text="Daftar"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_pesan_upload" />
-
+        app:layout_constraintTop_toBottomOf="@+id/edituploadBerkas" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
