@@ -48,9 +48,6 @@
             android:name=".pelatihan.KonfirmasiPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.JobActivty"
-            android:exported="false" />
-        <activity
             android:name=".pelatihan.DetailPelatihanActivity"
             android:exported="false" />
         <activity
