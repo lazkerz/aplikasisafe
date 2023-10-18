@@ -13,7 +13,7 @@
         android:layout_marginBottom="16dp">
 
         <ImageView
-            android:id="@+id/img_kerja"
+            android:id="@+id/imgPelatihan"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:contentDescription="@string/pt1"
@@ -29,7 +29,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_kerja"
+                android:id="@+id/namaPelatihan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Wirausaha"
@@ -38,7 +38,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_desc"
+                android:id="@+id/deskPelatihan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Mempelajari bagaimana membangun \nusaha dari awal"

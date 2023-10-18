@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.aplikasisafe.R
 
-class KerjaAdapter(private val kerjaList : ArrayList<CariKerja>) :
+class KerjaAdapter(private val kerjaList: ArrayList<CariKerja>) :
     RecyclerView.Adapter<KerjaAdapter.KerjaHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KerjaHolder {

@@ -12,7 +12,7 @@
         android:theme="@style/Theme.AplikasiSafe"
         tools:targetApi="31">
         <activity
-            android:name=".Splash.SplashActivity"
+            android:name=".Pelatihan.PilihanPelatihanActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,16 +20,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/title_activity_main">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--        <activity-->
+<!--            android:name=".MainActivity"-->
+<!--            android:exported="true"-->
+<!--            android:label="@string/title_activity_main">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
         <activity
             android:name=".Pelatihan.VerifikasiUser4"
             android:exported="false" />
@@ -52,10 +52,10 @@
             android:name=".Pelatihan.VerifikasiActivity1"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.TemaPelatihanActivity"
+            android:name=".Splash.SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.PilihanPelatihanActivity"
+            android:name=".Pelatihan.TemaPelatihanActivity"
             android:exported="false" />
         <activity
             android:name=".Pelatihan.PendaftaranBerhasilActivity"

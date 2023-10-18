@@ -1,6 +1,5 @@
 package com.example.aplikasisafe.Pelatihan
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -9,19 +8,18 @@ import com.example.aplikasisafe.R
 
 class JobActivity : AppCompatActivity() {
 
-    private lateinit var kerjaViewImage : RecyclerView
+    private lateinit var kerjaViewImage: RecyclerView
     private lateinit var kerjaArrayListen: ArrayList<CariKerja>
-    private lateinit var kerjaArrayListed : ArrayList<CariKerja>
-    lateinit var imageKerjaPt : Array<Int>
-    lateinit var namaKerjaPt : Array<String>
-    lateinit var desKerjaPt : Array<String>
-
-
+    private lateinit var kerjaArrayListed: ArrayList<CariKerja>
+    lateinit var imageKerjaPt: Array<Int>
+    lateinit var namaKerjaPt: Array<String>
+    lateinit var desKerjaPt: Array<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_job)
 
+        // Inisialisasi data
         imageKerjaPt = arrayOf(
             R.drawable.kerja1,
             R.drawable.kerja2,
@@ -51,6 +49,7 @@ class JobActivity : AppCompatActivity() {
             "PT Suka Maju",
             "PT Aman Jaya"
         )
+
         // Inisialisasi RecyclerView
         kerjaViewImage = findViewById(R.id.kerjaRecyclerView)
         kerjaViewImage.layoutManager = LinearLayoutManager(this)

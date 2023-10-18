@@ -19,7 +19,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_kerja"
+                android:id="@+id/materi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="BELAJAR FUNDAMENTAL HTML"
@@ -29,15 +29,13 @@
 
             <TextView
                 android:layout_marginTop="8dp"
-                android:id="@+id/tv_desc"
+                android:id="@+id/desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="HTML adalah bahasa markup standar untuk \nmembuat halaman website. Bahasa ini \nberfungsi untuk membuat struktur website \nhingga menyusun format teks dan gambar \npada halaman web."
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </LinearLayout>
-
-
 
         <LinearLayout
             android:layout_marginStart="24dp"
