@@ -60,7 +60,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Terima kasih atas antusiasme Anda, semoga usaha yang maksimal memperoleh hasil terbaik
          \n\nSilahkan menunggu email untuk informasi selanjutnya"
-            android:textSize="22sp"/>
+            android:textSize="20sp"/>
 
 
     </LinearLayout>
