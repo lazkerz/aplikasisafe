@@ -56,6 +56,35 @@
         <item>Kak besok ikut anak motor juga?</item>
     </string-array>
 
+    <string-array name="komunitas">
+        <item>Komunitas Anak Gunung</item>
+        <item>Komunitas Anak Corporat</item>
+        <item>Komunitas Sepeda</item>
+        <item>Komunitas Anak Motor</item>
+    </string-array>
+
+    <string-array name="isipost">
+        <item>Ayo gabung sini teman-teman</item>
+        <item>Semangat</item>
+        <item>Cari yang sehobi</item>
+        <item>Anak motor juga bisa produktif</item>
+    </string-array>
+
+    <string-array name="namaakun">
+        <item>Nurul</item>
+        <item>Liam</item>
+        <item>Andini</item>
+        <item>Farhan</item>
+    </string-array>
+
+    <integer-array name="imgpost">
+        <item>@drawable/img_post</item>
+        <item>@drawable/img_post2</item>
+        <item>@drawable/img_post3</item>
+        <item>@drawable/img_post4</item>
+    </integer-array>
+
+
     <string-array name="data_pt">
         <item>PT Mencari Aman</item>
         <item>PT Sejahtera Aman</item>
