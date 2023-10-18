@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.WindowManager
 import com.example.aplikasisafe.MainActivity
+import com.example.aplikasisafe.Pelatihan.LoginActivity
 import com.example.aplikasisafe.R
 
 class SplashActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class SplashActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, 4000)
     }
