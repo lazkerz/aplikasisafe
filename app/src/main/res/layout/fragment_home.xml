@@ -74,12 +74,21 @@
         android:layout_width="300dp"
         android:layout_height="145dp"
         android:layout_marginTop="10dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerInside"
         android:src="@drawable/img_dashboard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bar"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="Mulai"
+        android:backgroundTint="@color/blue"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dashboard_img"
+        app:layout_constraintStart_toStartOf="@+id/dashboard_img" />
 
     <TextView
         android:id="@+id/menu"
