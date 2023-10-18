@@ -11,16 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikasiSafe"
         tools:targetApi="31">
-
-        <activity
-            android:name=".pelatihan.KegiatanActivity"
-            android:exported="false" />
-        <activity
-            android:name=".pelatihan.KomunitasActivity"
-            android:exported="false" />
-        <activity
-            android:name=".pelatihan.StartedActivity"
-            android:exported="false" />
         <activity
             android:name=".pelatihan.LoginActivity"
             android:exported="false" />
@@ -46,6 +36,9 @@
             android:name=".pelatihan.KonfirmasiPelatihanActivity"
             android:exported="false" />
         <activity
+            android:name=".pelatihan.JobActivty"
+            android:exported="false" />
+        <activity
             android:name=".pelatihan.DetailPelatihanActivity"
             android:exported="false" />
         <activity
@@ -58,8 +51,9 @@
             android:name=".pelatihan.DaftarKerjaActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.JobActivity"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

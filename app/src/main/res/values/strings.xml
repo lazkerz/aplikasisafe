@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Safe</string>
+    <string name="login">Masuk</string>
+    <string name="email">Email</string>
+    <string name="daftar">Daftar</string>
+    <string name="katasandi">Kata Sandi</string>
+    <string name="teksbawah">Atau masuk dengan</string>
+    <string name="teksbawah2">Belum punya akun ?</string>
+    <string name="hintemail">Masukan email</string>
+    <string name="hintsandi">Masukan kata sandi</string>
+
+    <string name="lewati">Lewati</string>
+    <string name="katapendukung1">Apakah anda kesulitan dalam\n mencari pekerjaan saat ini?</string>
+    <string name="ya">Ya</string>
+    <string name="tidak">Tidak</string>
+    <string name="judul_kerja">Cari Kerja</string>
+    <string name="kategori">Kategori</string>
+    <string name="simpan">Simpan</string>
+    <string name="kerja1">Content Creator</string>
+    <string name="kerja2">Web Developer</string>
+    <string name="kerja3">Backend Engineer</string>
+    <string name="kerja4">Graphic Design</string>
+    <string name="kerja5">Digital Marketing</string>
+    <string name="kerja6">Wiraswasta</string>
+    <string name="kerja7">Koki Restoran</string>
+    <string name="kerja8">Akutansi</string>
+    <string name="pt1">PT Mencari Aman</string>
+    <string name="pt2">PT Sejahtera Aman</string>
+    <string name="pt3">PT Dev Academy</string>
+    <string name="pt4">PT Aman Sentosa</string>
+    <string name="pt5">PT Aman Jaya</string>
+    <string name="pt6">PT Suka Maju</string>
+    <string name="pt7">PT Aman Jaya</string>
+    <string name="pt8">PT Makmur</string>
+
+    <string name="judul_gaji">Gaji Perbulan</string>
+    <string name="gaji">Rp 5.000.000 - Rp 8.000.000 /Bulan</string>
+    <string name="judul_desk_pekerjaan">Deksripsi Pekerjaan : </string>
+    <string name="desk_pekerjaan">1. Memiliki pengalaman 2 tahun \n2. Kemahiran dalam laravel \n3. Komunikasi dan kerja sama dengan tim \n4. Update dengan tren pengembangan web \n5. Menyelesaikan dan memecahkan masalah</string>
+    <string name="detail_benefit">Benefit : </string>
+    <string name="benefit">Gaji Pokok, Tunjangan, dan BPJS Kesehatan</string>
+    <string name="jdl_kota1">Kota Penempatan :</string>
+    <string name="kota_kerja1">Jakarta Selatan</string>
+    <string name="jdl_perusahaan">Tentang Perusahaan</string>
+    <string name="tentang_perusahaan">PT Sejahtera Aman adalah sebuah perusahaan yang sudah berdiri pada tahun 2016 dan menjadi perusahaan yang terpercaya. Kami memiliki 100 pegawai di tiap daerah dan total 10.000 pegawai di seluruh indonesia </string>
+    <string name="desc_pelatihan">Dengan diadakannya pelatihan ini membuat orang \nyang ingin mendapatkan
+                    pengetahuan dalam \nmengembangkan website dari nol hingga mengerti.</string>
+    <string name="timeline_pelatihan">Hari : Sabtu, 16 September
+                    \nPukul : 10:00 - Selesai
+                    \nOnline di zoom
+                    \n*Link akan dibagikan lewat email
+                    apabila sudah \nmendaftar</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_obrolan">Obrolan</string>
+    <string name="title_profile">Profile</string>
+</resources>
