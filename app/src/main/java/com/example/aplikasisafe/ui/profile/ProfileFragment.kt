@@ -1,12 +1,18 @@
 package com.example.aplikasisafe.ui.profile
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.aplikasisafe.Pelatihan.JobActivity
+import com.example.aplikasisafe.Pelatihan.LoginActivity
+import com.example.aplikasisafe.R
+import com.example.aplikasisafe.databinding.FragmentHomeBinding
 import com.example.aplikasisafe.databinding.FragmentObrolanBinding
 import com.example.aplikasisafe.databinding.FragmentProfileBinding
 
@@ -24,7 +30,17 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        return binding.root
+        val view = binding.root
+
+        val out: ImageButton = view.findViewById(R.id.out)
+
+        out.setOnClickListener {
+            // Tindakan saat tombol diklik
+            val intent = Intent(activity, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        return view
     }
 
 }

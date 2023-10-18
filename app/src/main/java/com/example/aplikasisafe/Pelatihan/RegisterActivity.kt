@@ -21,6 +21,10 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                 startActivity(intent)
             }
+            R.id.btn_masuk-> {
+                val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
