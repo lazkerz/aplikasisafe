@@ -19,6 +19,13 @@
         <item>@drawable/anti5</item>
     </integer-array>
 
+    <integer-array name="imageobrolan">
+        <item>@drawable/cht1</item>
+        <item>@drawable/cht2</item>
+        <item>@drawable/cht3</item>
+        <item>@drawable/cht4</item>
+    </integer-array>
+
     <string-array name="judul">
         <item>Sosialisasi Pencegahan Kenakalan Remaja dan Kejahatan Dalam Dunia Maya</item>
         <item>PPKO IMM BPP UAD Berkomitmen Edukasi Anti kejahatan Seksual</item>
@@ -33,6 +40,20 @@
         <item>Kegiatan Gerakan Nasional Anti Kejahatan Seksual Anak (GN AKSA) diselenggarakan di Sumberagung pada Jumat, 24 Februari 2023 di aula Kalurahan Sumberagung.</item>
         <item>Satgas antibegal merupakan satuan yang dibentuk khusus untuk mengantisipasi adanya kejahatan begal. Kapolri Jenderal Listyo Sigit Prabowo menyampaikan tim Satgas Anti Begal </item>
         <item>Kapolres Metro Jakarta Selatan Kombes Pol Budi Sartono mengingatkan pesepeda di Ibu Kota untuk bersepeda tidak sendiri tetapi berkawan.</item>
+    </string-array>
+
+    <string-array name="nama">
+        <item>Komunitas Olahraga</item>
+        <item>Komunitas Bersepeda</item>
+        <item>Komunitas Teknik</item>
+        <item>Andini</item>
+    </string-array>
+
+    <string-array name="isicht">
+        <item>Sindy: Halo semuanya</item>
+        <item>Angela: sadel siapa ini ketinggalan?</item>
+        <item>Badang: Laptop aku lagi blue screen:(</item>
+        <item>Kak besok ikut anak motor juga?</item>
     </string-array>
 
     <string-array name="data_pt">

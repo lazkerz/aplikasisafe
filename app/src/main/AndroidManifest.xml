@@ -22,6 +22,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Pelatihan.TemaPelatihanActivity"
+            android:exported="false" />
+        <activity
             android:name=".Pelatihan.LoginActivity"
             android:exported="false" />
         <activity
@@ -29,9 +32,6 @@
             android:exported="false" />
         <activity
             android:name=".Pelatihan.VerifikasiActivity1"
-            android:exported="false" />
-        <activity
-            android:name=".Pelatihan.TemaPelatihanActivity"
             android:exported="false" />
         <activity
             android:name=".Pelatihan.PilihanPelatihanActivity"

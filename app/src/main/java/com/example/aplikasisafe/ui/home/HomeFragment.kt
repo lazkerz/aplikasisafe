@@ -1,12 +1,15 @@
 package com.example.aplikasisafe.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.aplikasisafe.Pelatihan.TemaPelatihanActivity
 import com.example.aplikasisafe.R
 import com.example.aplikasisafe.adapters.HomeAdapter
 import com.example.aplikasisafe.databinding.FragmentHomeBinding
@@ -17,8 +20,6 @@ class HomeFragment : Fragment() {
     private lateinit var _binding: FragmentHomeBinding
     private lateinit var adapter: HomeAdapter
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding
 
     override fun onCreateView(
@@ -27,8 +28,20 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        return binding.root
+        val view = binding.root
+
+        val menu2: ImageButton = view.findViewById(R.id.menu2)
+
+        menu2.setOnClickListener {
+            // Tindakan saat tombol diklik
+            val intent = Intent(activity, TemaPelatihanActivity::class.java)
+            startActivity(intent)
+        }
+
+        return view
     }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -49,7 +62,6 @@ class HomeFragment : Fragment() {
 
         private fun judul(): Array<String> = resources.getStringArray(R.array.judul)
         private fun isi(): Array<String> = resources.getStringArray(R.array.isi)
-
         private fun image(): List<Int> = listOf(
             R.drawable.anti,
             R.drawable.anti2,
