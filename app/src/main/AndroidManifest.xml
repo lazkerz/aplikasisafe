@@ -12,6 +12,18 @@
         android:theme="@style/Theme.AplikasiSafe"
         tools:targetApi="31">
         <activity
+            android:name=".Pelatihan.VerifikasiUser4"
+            android:exported="false" />
+        <activity
+            android:name=".Pelatihan.VerifikasiUser3"
+            android:exported="false" />
+        <activity
+            android:name=".Pelatihan.VerifikasiUser2"
+            android:exported="false" />
+        <activity
+            android:name=".Pelatihan.VerifikasiUser"
+            android:exported="false" />
+        <activity
             android:name=".Pelatihan.LoginActivity"
             android:exported="false" />
         <activity
