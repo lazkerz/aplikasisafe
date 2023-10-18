@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Pelatihan.PelatihanberhasilActivity">
 
     <LinearLayout
@@ -15,20 +16,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <ImageView
-            android:id="@+id/back3"
-            android:layout_marginStart="8dp"
+
+        <ImageButton
+            android:id="@+id/btn_backpelatihan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/ic_back" />
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            android:contentDescription="Kembali ke halaman sebelumnya"
+            android:src="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/bell3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="340dp"
-            android:src="@drawable/ic_bell" />
+            android:background="@color/white"
+            android:contentDescription="Ke halaman riwayat"
+            android:src="@drawable/ic_bell"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -60,7 +68,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Terima kasih atas antusiasme Anda, semoga usaha yang maksimal memperoleh hasil terbaik
          \n\nSilahkan menunggu email untuk informasi selanjutnya"
-            android:textSize="22sp"/>
+            android:textSize="20sp"/>
 
 
     </LinearLayout>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Pelatihan.RegisterActivity">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_semibold"
         android:text="Daftar"
-        android:textSize="28dp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +21,7 @@
         app:layout_constraintVertical_bias="0.127" />
 
     <TextView
-        android:id="@+id/textnama"
+        android:id="@+id/textNamaDaftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -35,7 +36,7 @@
         app:layout_constraintVertical_bias="0.027" />
 
     <EditText
-        android:id="@+id/editnama"
+        android:id="@+id/editNamaDaftar"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:background="@drawable/bg_edit_text2"
@@ -46,11 +47,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textnama"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintTop_toBottomOf="@+id/textNamaDaftar"
+        app:layout_constraintVertical_bias="0.02"
+        android:autofillHints="" />
 
     <TextView
-        android:id="@+id/textemail"
+        android:id="@+id/textEmailDaftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -61,11 +63,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editnama"
+        app:layout_constraintTop_toBottomOf="@+id/editNamaDaftar"
         app:layout_constraintVertical_bias="0.033" />
 
     <EditText
-        android:id="@+id/editemail"
+        android:id="@+id/editEmailDaftar"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:background="@drawable/bg_edit_text2"
@@ -76,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textemail"
+        app:layout_constraintTop_toBottomOf="@+id/textEmailDaftar"
         app:layout_constraintVertical_bias="0.02" />
 
     <TextView
@@ -91,7 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editemail"
+        app:layout_constraintTop_toBottomOf="@+id/editEmailDaftar"
         app:layout_constraintVertical_bias="0.033" />
 
     <EditText
@@ -155,7 +157,7 @@
 
 
     <Button
-        android:id="@+id/btn_Masuk"
+        android:id="@+id/btn_daftarSigIn"
         android:layout_width="97dp"
         android:layout_height="48dp"
         android:layout_marginStart="245dp"

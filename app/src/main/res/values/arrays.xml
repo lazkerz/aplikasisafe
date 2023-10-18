@@ -95,4 +95,22 @@
         <item>PT Aman Jaya</item>
         <item>PT Makmur</item>
     </string-array>
+
+    <string-array name="materi">
+        <item>BELAJAR FUNDAMENTAL HTML</item>
+          <item>BELAJAR CSS</item>
+          <item>BELAJAR JAVASCRIPT</item>
+           <item>NETWORK ENGINEER</item>
+        <item>BELAJAR PHP</item>
+       <item>BELAJAR KOTLIN</item>
+    </string-array>
+
+    <string-array name="desc">
+            <item>HTML adalah bahasa markup standar untuk \nmembuat halaman website. Bahasa ini berfungsi untuk membuat struktur \nwebsite hingga menyusun format teks dan gambar pada halaman web</item>
+         <item>CSS  atau Cascading Style Sheet adalah \nsebuah elemen atau komponen dari website agar memperindah  tampilan secara visual</item>
+           <item>Javascript adalah suatu bahasa pemrograman \nyang membuat halaman suatu website menjadi \nlebih dinamis dan interaktif </item>
+          <item>Belajar bagaimana menangani jaringan \nkomputer, mulai dari maintenance hingga \ntroubleshooting</item>
+           <item>PHP Adalah bahasa scripting server-side, \nBahasa pemrograman yang digunakan untuk \nmengembangkan situs web statis atau situs \nweb dinamis atau aplikasi Web. PHP singkatan \ndari Hypertext Pre-processor, yang sebelumnya \ndisebut Personal Home Pages</item>
+          <item>Kotlin memiliki fungsi untuk membuat aplikasi \nAndroid berjalan dengan lancar. Tidak hanya \nitu, Kotlin juga dapat digunakan untuk \nmembuat aplikasi berbasis web dan aplikasi \niOS. Salah satu contoh aplikasi yang dibangun \nmenggunakan Kotlin adalah Netflix (iOS)</item>
+    </string-array>
 </resources>

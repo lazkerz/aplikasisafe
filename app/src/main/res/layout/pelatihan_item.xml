@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_kerja"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imgPelatihan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/pt1"
+            android:src="@drawable/coding" />
+
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/namaPelatihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wirausaha"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deskPelatihan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mempelajari bagaimana membangun \nusaha dari awal"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

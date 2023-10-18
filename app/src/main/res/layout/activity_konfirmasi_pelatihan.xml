@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Pelatihan.KonfirmasiPelatihanActivity">
 
     <LinearLayout
@@ -41,7 +42,7 @@
             android:padding="24dp"
             android:gravity="center"
             android:text="Anda akan mendaftar Belajar Fundamental HTML  yang akan dilaksanakan secara online mulai
-                            23 Agustus - 15 September 2023, \nlanjut?"
+23 Agustus - 15 September 2023, lanjut?"
             android:textSize="20sp"/>
 
         <androidx.appcompat.widget.AppCompatButton

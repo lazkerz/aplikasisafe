@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Pelatihan.TemaPelatihanActivity">
 
     <LinearLayout
@@ -12,20 +13,22 @@
         android:layout_height="60dp"
         android:layout_marginTop="4dp"
         android:padding="8dp"
-        android:background="@color/grey_light"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_gravity="center"
+        <ImageButton
             android:id="@+id/backPelatihan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_back" />
+            android:background="@color/white"
+            android:contentDescription="Kembali ke halaman sebelumnya"
+            android:src="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <SearchView
             android:id="@+id/searchPelatihan"
@@ -53,7 +56,8 @@
             android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="40dp"
-            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
             android:text="Pelatihan"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/space1" />
@@ -62,7 +66,7 @@
             android:id="@+id/btn_riwayat"
             android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#D9D9D9"
+            android:backgroundTint="@color/grey"
             android:text="Riwayat"
             android:textColor="@color/black"
             app:layout_constraintEnd_toStartOf="@+id/btn_simpan"
@@ -70,21 +74,12 @@
             app:layout_constraintTop_toBottomOf="@+id/space1" />
     </LinearLayout>
 
-    <ScrollView
-        android:padding="16dp"
-        android:id="@+id/scroll_pelatihan"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/latihanRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="144dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        tools:layout_editor_absoluteX="-16dp">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_example"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="12dp"
-            tools:listitem="@layout/kerja_item" />
-    </ScrollView>
+        tools:listitem="@layout/pelatihan_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

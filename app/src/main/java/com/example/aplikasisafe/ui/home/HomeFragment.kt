@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.aplikasisafe.Pelatihan.JobActivity
 import com.example.aplikasisafe.Pelatihan.TemaPelatihanActivity
 import com.example.aplikasisafe.R
 import com.example.aplikasisafe.adapters.HomeAdapter
@@ -31,8 +32,16 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
 
+        val menu1: ImageButton = view.findViewById(R.id.menu1)
         val menu2: ImageButton = view.findViewById(R.id.menu2)
         val menu3: ImageButton = view.findViewById(R.id.menu3)
+
+
+        menu1.setOnClickListener {
+            // Tindakan saat tombol diklik
+            val intent = Intent(activity, JobActivity::class.java)
+            startActivity(intent)
+        }
 
         menu2.setOnClickListener {
             // Tindakan saat tombol diklik

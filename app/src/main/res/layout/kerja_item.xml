@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginBottom="16dp">
 
     <LinearLayout
@@ -14,11 +14,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/iv_kerja"
+            android:id="@+id/title_kerja"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:contentDescription="@string/pt1"
-            android:src="@drawable/coding" />
+            android:src="@drawable/kerja1" />
 
         <Space
             android:layout_width="24dp"
@@ -30,7 +30,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_kerja"
+                android:id="@+id/title_pt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pt1"
@@ -39,7 +39,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_desc"
+                android:id="@+id/title_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/pt1"
@@ -49,7 +49,7 @@
         </LinearLayout>
 
         <Space
-            android:layout_width="120dp"
+            android:layout_width="72dp"
             android:layout_height="wrap_content" />
 
         <ImageView
