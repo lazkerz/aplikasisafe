@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pelatihan.PilihanPelatihanActivity">
+    tools:context=".Pelatihan.PilihanPelatihanActivity">
     <LinearLayout
         android:id="@+id/bar_temaPelatihan"
         android:layout_width="match_parent"

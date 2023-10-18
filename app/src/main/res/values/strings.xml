@@ -8,11 +8,6 @@
     <string name="teksbawah2">Belum punya akun ?</string>
     <string name="hintemail">Masukan email</string>
     <string name="hintsandi">Masukan kata sandi</string>
-    <string name="welcome">Welcome</string>
-    <string name="getstarted">Get Started</string>
-    <string name="sambutan">Berpikir positif dan lakukan hal yang \nmenyenangkan merupakan cara terbaik \nuntuk menjadi produktif dalam menjalani \nhari.</string>
-    <string name="simpan">Simpan</string>
-
 
     <string name="lewati">Lewati</string>
     <string name="katapendukung1">Apakah anda kesulitan dalam\n mencari pekerjaan saat ini?</string>
@@ -20,6 +15,7 @@
     <string name="tidak">Tidak</string>
     <string name="judul_kerja">Cari Kerja</string>
     <string name="kategori">Kategori</string>
+    <string name="simpan">Simpan</string>
     <string name="kerja1">Content Creator</string>
     <string name="kerja2">Web Developer</string>
     <string name="kerja3">Backend Engineer</string>
@@ -54,8 +50,8 @@
                     \nOnline di zoom
                     \n*Link akan dibagikan lewat email
                     apabila sudah \nmendaftar</string>
-    <string name="pelatiihan_untukmu">Pelatihan untuk Anda</string>
-    <string name="ok">Ok</string>
-    <string name="konfirmasiPelatihan">Anda akan mendaftar Belajar Fundamental HTML  yang akan dilaksanakan secara online mulai
-                            23 Agustus - 15 September 2023, \nlanjut?</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_obrolan">Obrolan</string>
+    <string name="title_profile">Profile</string>
 </resources>

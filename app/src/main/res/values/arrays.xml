@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="data_job">
+    <string-array name="data_kerja">
         <item>Content Creator</item>
         <item>Web Developer</item>
         <item>Backend Engineer</item>
@@ -11,7 +11,29 @@
         <item>Akutansi</item>
     </string-array>
 
+    <integer-array name="image">
+        <item>@drawable/anti</item>
+        <item>@drawable/anti2</item>
+        <item>@drawable/anti3</item>
+        <item>@drawable/anti4</item>
+        <item>@drawable/anti5</item>
+    </integer-array>
 
+    <string-array name="judul">
+        <item>Sosialisasi Pencegahan Kenakalan Remaja dan Kejahatan Dalam Dunia Maya</item>
+        <item>PPKO IMM BPP UAD Berkomitmen Edukasi Anti kejahatan Seksual</item>
+        <item>GERAKAN NASIONAL ANTI KEJAHATAN SEKSUAL ANAK</item>
+        <item>Kehadiran Satgas Anti Begal Dinilai Momentum Bersihkan Kejahatan Jalanan</item>
+        <item>Tips Gowes Anti Begal</item>
+    </string-array>
+
+    <string-array name="isi">
+        <item>Sosialisasi mengenai kejahatan dalam dunia maya adalah upaya penting untuk meningkatkan kesadaran individu tentang potensi bahaya dan risiko yang ada di lingkungan digital.</item>
+        <item>Tim Program Penguatan Kapasitas Organisasi Mahasiswa (PPKO) Ikatan Mahasiswa Muhammadiyah (IMM) Bimbingan dan Konseling (BK), Pendidikan Guru Sekolah Dasar (PGSD),</item>
+        <item>Kegiatan Gerakan Nasional Anti Kejahatan Seksual Anak (GN AKSA) diselenggarakan di Sumberagung pada Jumat, 24 Februari 2023 di aula Kalurahan Sumberagung.</item>
+        <item>Satgas antibegal merupakan satuan yang dibentuk khusus untuk mengantisipasi adanya kejahatan begal. Kapolri Jenderal Listyo Sigit Prabowo menyampaikan tim Satgas Anti Begal </item>
+        <item>Kapolres Metro Jakarta Selatan Kombes Pol Budi Sartono mengingatkan pesepeda di Ibu Kota untuk bersepeda tidak sendiri tetapi berkawan.</item>
+    </string-array>
 
     <string-array name="data_pt">
         <item>PT Mencari Aman</item>
