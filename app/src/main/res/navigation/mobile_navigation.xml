@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.aplikasisafe.Pelatihan.ui.home.HomeFragment"
+        android:name="com.example.aplikasisafe.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.aplikasisafe.Pelatihan.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_obrolan"
+        android:name="com.example.aplikasisafe.ui.obrolan.ObrolanFragment"
+        android:label="@string/title_obrolan"
+        tools:layout="@layout/fragment_obrolan" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.aplikasisafe.Pelatihan.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_profile"
+        android:name="com.example.aplikasisafe.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

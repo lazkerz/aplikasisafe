@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.example.aplikasisafe.R
-import com.example.projectmacro8.KonfirmasiPelatihanActivity
+
 
 class DaftarPelatihanActivity : AppCompatActivity(), View.OnClickListener {
     @SuppressLint("MissingInflatedId")
