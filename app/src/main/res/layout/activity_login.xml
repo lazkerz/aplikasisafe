@@ -15,6 +15,7 @@
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/login"
         android:textSize="28dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,13 +26,12 @@
         android:id="@+id/textEmailMasuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
+        android:layout_marginStart="20dp"
         android:fontFamily="@font/poppins_regular"
         android:text="@string/email"
         android:textSize="13sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.008"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Daftar"
         app:layout_constraintVertical_bias="0.06" />
@@ -44,10 +44,10 @@
         android:hint="@string/hintemail"
         android:padding="12dp"
         android:textSize="13sp"
-
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textEmailMasuk"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmailMasuk"
         app:layout_constraintVertical_bias="0.019" />
 
@@ -58,7 +58,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins_regular"
         android:text="@string/katasandi"
-
+        android:textColor="@color/black"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="@+id/editEmail2"
         app:layout_constraintTop_toBottomOf="@+id/editEmail2" />
@@ -71,9 +71,10 @@
         android:hint="@string/hintsandi"
         android:padding="12dp"
         android:textSize="13sp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textSandi"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textSandi"
         app:layout_constraintVertical_bias="0.03" />
 
@@ -85,17 +86,18 @@
         android:fontFamily="@font/poppins_regular"
         android:text="Atau masuk dengan"
         android:textSize="13sp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_masuk" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_masuk"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/bg_lengkung"
-        android:text="@string/daftar"
+        android:text="@string/login"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -124,7 +126,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textTambahan" />
 
     <Button
-        android:id="@+id/btn_Masuks"
+        android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="245dp"
@@ -138,7 +140,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_masuk"
         app:layout_constraintVertical_bias="0.324" />
 
     <TextView
@@ -149,9 +151,10 @@
         android:fontFamily="@font/poppins_regular"
         android:text="Sudah mempunyai akun?"
         android:textSize="13sp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_masuk"
         app:layout_constraintVertical_bias="0.346" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
