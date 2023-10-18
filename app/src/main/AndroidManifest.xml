@@ -24,7 +24,7 @@
             android:name=".pelatihan.StartedActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.JobActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".pelatihan.LoginActivity"
@@ -63,7 +63,7 @@
             android:name=".pelatihan.DaftarKerjaActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".pelatihan.JobActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

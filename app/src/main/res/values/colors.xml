@@ -10,5 +10,9 @@
     <color name="green">#11DC4A</color>
     <color name="orange">#FC844D</color>
     <color name="blue">#447186</color>
-<!--    <color name="teal_200">#000000</color>-->
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_700">#00796B</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_200">#CE93D8</color>
 </resources>
