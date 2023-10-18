@@ -1,48 +1,72 @@
 package com.example.aplikasisafe.potensi
 
-/**
- * A simple [Fragment] subclass.
- * Use the [KomunitasFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class KomunitasFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+import android.os.Bundle
+import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.example.aplikasisafe.adapters.ObrolanAdapter
+import com.example.aplikasisafe.databinding.FragmentObrolanBinding
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.aplikasisafe.R
+import com.example.aplikasisafe.adapters.KomunitasAdapter
+import com.example.aplikasisafe.databinding.FragmentKomunitasBinding
+import com.example.aplikasisafe.model.KomunitasModel
+import com.example.aplikasisafe.model.ObrolanModel
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+
+class KomunitasFragment : Fragment() {
+
+    private lateinit var _binding: FragmentKomunitasBinding
+    private lateinit var adapter: KomunitasAdapter
+
+    private val binding get() = _binding
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
+        _binding = FragmentKomunitasBinding.inflate(inflater, container, false)
+        return binding.root
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_komunitas, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment KomunitasFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            KomunitasFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setKomunitasAdapter()
     }
+
+    private fun setKomunitasAdapter() {
+        val dataList: MutableList<KomunitasModel> = mutableListOf()
+
+        komunitas().forEachIndexed { index, komunitas ->
+            dataList.add(KomunitasModel (image()[index], komunitas, namaakun()[index], isipost()[index], imgpost()[index]))
+        }
+        Log.d("ISI DATANYA ", dataList.toString())
+        adapter = KomunitasAdapter(dataList, requireContext())
+        binding.recyleview.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyleview.adapter = adapter
+    }
+
+    private fun komunitas(): Array<String> = resources.getStringArray(R.array.komunitas)
+
+    private fun namaakun(): Array<String> = resources.getStringArray(R.array.namaakun)
+    private fun isipost(): Array<String> = resources.getStringArray(R.array.isipost)
+    private fun image(): List<Int> = listOf(
+        R.drawable.ava_post,
+        R.drawable.ava_post2,
+        R.drawable.ava_post3,
+        R.drawable.ava_post4,
+    )
+
+    private fun imgpost(): List<Int> = listOf(
+        R.drawable.img_post,
+        R.drawable.img_post2,
+        R.drawable.img_post3,
+        R.drawable.img_post4,
+    )
+
+
 }

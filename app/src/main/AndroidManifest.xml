@@ -32,6 +32,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".potensi.PotensiActivity"
+            android:exported="false" />
+        <activity
             android:name=".Pelatihan.TemaPelatihanActivity"
             android:exported="false" />
         <activity

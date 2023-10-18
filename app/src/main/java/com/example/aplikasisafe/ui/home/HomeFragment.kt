@@ -14,6 +14,7 @@ import com.example.aplikasisafe.R
 import com.example.aplikasisafe.adapters.HomeAdapter
 import com.example.aplikasisafe.databinding.FragmentHomeBinding
 import com.example.aplikasisafe.model.HomeModel
+import com.example.aplikasisafe.potensi.PotensiActivity
 
 class HomeFragment : Fragment() {
 
@@ -31,10 +32,18 @@ class HomeFragment : Fragment() {
         val view = binding.root
 
         val menu2: ImageButton = view.findViewById(R.id.menu2)
+        val menu3: ImageButton = view.findViewById(R.id.menu3)
 
         menu2.setOnClickListener {
             // Tindakan saat tombol diklik
             val intent = Intent(activity, TemaPelatihanActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        menu3.setOnClickListener {
+            // Tindakan saat tombol diklik
+            val intent = Intent(activity, PotensiActivity::class.java)
             startActivity(intent)
         }
 
