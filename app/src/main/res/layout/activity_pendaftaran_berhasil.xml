@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/white"
     tools:context=".Pelatihan.PendaftaranBerhasilActivity">
 
     <LinearLayout
@@ -16,13 +17,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        <ImageView
+
+        <ImageButton
             android:id="@+id/back2"
-            android:layout_marginStart="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/ic_back" />
+            android:layout_marginStart="8dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,7 +67,7 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_ok"
+            android:id="@+id/btn_okehBehasil"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"

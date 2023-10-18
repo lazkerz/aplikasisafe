@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Pelatihan.TemaPelatihanActivity">
 
     <LinearLayout
@@ -18,13 +19,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:layout_gravity="center"
+        <ImageButton
             android:id="@+id/backPelatihan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_back" />
+            android:background="@color/white"
+            android:contentDescription="Kembali ke halaman sebelumnya"
+            android:src="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <SearchView
             android:id="@+id/searchPelatihan"

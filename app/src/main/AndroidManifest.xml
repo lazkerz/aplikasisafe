@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikasiSafe"
         tools:targetApi="31">
+
         <activity
             android:name=".Pelatihan.KegiatanBerhasilActvity"
             android:exported="false" />

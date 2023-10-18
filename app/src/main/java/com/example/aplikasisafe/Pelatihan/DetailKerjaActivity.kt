@@ -9,7 +9,7 @@ import android.widget.Button
 import com.example.aplikasisafe.R
 
 class DetailKerjaActivity : AppCompatActivity(), View.OnClickListener {
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_kerja)

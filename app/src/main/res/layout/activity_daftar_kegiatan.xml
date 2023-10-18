@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Pelatihan.DaftarKegiatanActivity">
 
     <LinearLayout
@@ -15,7 +16,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <ImageButton
+            android:contentDescription="Kembali ke halaman sebelumnya"
+            android:background="@color/white"
             android:id="@+id/back1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,13 +36,16 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/bell1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="112dp"
-            android:src="@drawable/ic_bell" />
+            android:background="@color/white"
+            android:contentDescription="Ke halaman riwayat"
+            android:src="@drawable/ic_bell"
+            tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
     <TextView
