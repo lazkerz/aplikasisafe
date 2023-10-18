@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pelatihan.DaftarKerjaActivity">
+    tools:context=".pelatihan.DaftarKerjaActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -156,10 +156,9 @@
     <EditText
         android:id="@+id/editupload"
         android:layout_width="320dp"
-        android:layout_height="48dp"
+        android:layout_height="64dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/bg_edit_text2"
-        android:hint="Upload Berkas"
+        android:background="@drawable/bg_edit_upload"
         android:padding="12dp"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="@+id/textupload"
@@ -178,7 +177,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editupload" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_register"
+        android:id="@+id/btn_registerKerja"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
