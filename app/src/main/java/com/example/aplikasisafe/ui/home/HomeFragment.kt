@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.aplikasisafe.Pelatihan.TemaPelatihanActivity
@@ -27,14 +28,20 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        return binding.root
+        val view = binding.root
 
+        val menu2: ImageButton = view.findViewById(R.id.menu2)
+
+        menu2.setOnClickListener {
+            // Tindakan saat tombol diklik
+            val intent = Intent(activity, TemaPelatihanActivity::class.java)
+            startActivity(intent)
+        }
+
+        return view
     }
 
-    fun onMenu2Click(view: View) {
-        val intent = Intent(requireContext(), TemaPelatihanActivity::class.java)
-        startActivity(intent)
-    }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
