@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".pelatihan.StartedActivity">
+    tools:context=".Pelatihan.StartedActivity">
 
     <TextView
         android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="@string/welcome"
+        android:text="Welcome"
         android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -31,10 +31,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textWelcome" />
 
     <TextView
+        android:padding="16dp"
         android:id="@+id/textSambutan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sambutan"
+        android:text="Berpikir positif dan lakukan hal yang menyenangkan merupakan cara terbaik untuk menjadi produktif dalam menjalani hari."
         android:textColor="@color/black"
         android:textSize="14sp"
         android:gravity="center"
@@ -49,7 +50,7 @@
         android:layout_marginTop="16dp"
         android:id="@+id/btn_getstarted"
         android:background="@drawable/btn_ya"
-        android:text="@string/getstarted"
+        android:text="Get Started"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

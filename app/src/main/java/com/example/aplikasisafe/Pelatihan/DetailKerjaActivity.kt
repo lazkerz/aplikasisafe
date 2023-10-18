@@ -1,4 +1,4 @@
-package com.example.aplikasisafe.pelatihan
+package com.example.aplikasisafe.Pelatihan
 
 import android.annotation.SuppressLint
 import android.content.Intent

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pelatihan.KonfirmasiPelatihanActivity">
+    android:padding="16dp"
+    tools:context=".Pelatihan.KegiatanBerhasilActvity">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -16,44 +17,59 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <ImageView
-            android:id="@+id/back2"
+            android:id="@+id/btn_back6"
             android:layout_marginStart="8dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginEnd="300dp"
             android:src="@drawable/ic_back" />
+        <ImageButton
+            android:id="@+id/btn_bell6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_bell"/>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="360dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="@drawable/btn_tidak"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.372">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="24dp"
             android:gravity="center"
-            android:text="Anda akan mendaftar Belajar Fundamental HTML  yang akan dilaksanakan secara online mulai
-23 Agustus - 15 September 2023, lanjut?"
-            android:textSize="20sp"/>
+            android:text="Pendaftaran \nBerhasil"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/checkGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/ic_check_green" />
+
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_ok"
-            android:layout_width="160dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:background="@drawable/btn_ok"
-            android:backgroundTint="@color/orange"
+            android:backgroundTint="@color/green"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="Ok" />
+            android:text="Lanjut ke WhatsApp" />
 
 
     </LinearLayout>

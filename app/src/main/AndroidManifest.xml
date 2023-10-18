@@ -12,43 +12,43 @@
         android:theme="@style/Theme.AplikasiSafe"
         tools:targetApi="31">
         <activity
-            android:name=".pelatihan.LoginActivity"
+            android:name=".Pelatihan.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.RegisterActivity"
+            android:name=".Pelatihan.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.VerifikasiActivity1"
+            android:name=".Pelatihan.VerifikasiActivity1"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.TemaPelatihanActivity"
+            android:name=".Pelatihan.TemaPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.PilihanPelatihanActivity"
+            android:name=".Pelatihan.PilihanPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.PendaftaranBerhasilActivity"
+            android:name=".Pelatihan.PendaftaranBerhasilActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.PelatihanberhasilActivity"
+            android:name=".Pelatihan.PelatihanberhasilActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.KonfirmasiPelatihanActivity"
+            android:name=".Pelatihan.KonfirmasiPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.JobActivty"
+            android:name=".Pelatihan.JobActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.DetailPelatihanActivity"
+            android:name=".Pelatihan.DetailPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.DetailKerjaActivity"
+            android:name=".Pelatihan.DetailKerjaActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.DaftarPelatihanActivity"
+            android:name=".Pelatihan.DaftarPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".pelatihan.DaftarKerjaActivity"
+            android:name=".Pelatihan.DaftarKerjaActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

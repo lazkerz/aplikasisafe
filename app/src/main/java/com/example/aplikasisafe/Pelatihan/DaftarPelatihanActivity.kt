@@ -1,4 +1,4 @@
-package com.example.aplikasisafe.pelatihan
+package com.example.aplikasisafe.Pelatihan
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -8,19 +8,20 @@ import android.view.View
 import android.widget.Button
 import com.example.aplikasisafe.R
 
-class DaftarKerjaActivity : AppCompatActivity(), View.OnClickListener {
+class DaftarPelatihanActivity : AppCompatActivity(), View.OnClickListener {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_daftar_kerja)
-        val btnRegisterKerja: Button = findViewById(/* id = */ R.id.btn_registerKerja)
-        btnRegisterKerja.setOnClickListener(this)
+        setContentView(R.layout.activity_daftar_pelatihan)
+        val btnDaftarPelatihan: Button = findViewById(/* id = */ R.id.btnDaftar1)
+        btnDaftarPelatihan.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when(v?.id){
-            R.id.btn_registerKerja -> {
-                val intent = Intent(this@DaftarKerjaActivity, PendaftaranBerhasilActivity::class.java)
+            R.id.btnDaftar1 -> {
+                val intent =
+                    Intent(this@DaftarPelatihanActivity, KonfirmasiPelatihanActivity::class.java)
                 startActivity(intent)
             }
         }

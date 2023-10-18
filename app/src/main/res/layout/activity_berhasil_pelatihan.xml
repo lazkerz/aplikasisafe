@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pelatihan.PelatihanberhasilActivity">
+    tools:context=".Pelatihan.PelatihanberhasilActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -60,7 +60,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Terima kasih atas antusiasme Anda, semoga usaha yang maksimal memperoleh hasil terbaik
          \n\nSilahkan menunggu email untuk informasi selanjutnya"
-            android:textSize="22sp"/>
+            android:textSize="20sp"/>
 
 
     </LinearLayout>

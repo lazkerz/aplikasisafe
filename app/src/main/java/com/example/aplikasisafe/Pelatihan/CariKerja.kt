@@ -1,4 +1,4 @@
-package com.example.aplikasisafe.pelatihan
+package com.example.aplikasisafe.Pelatihan
 
 data class CariKerja(
     var titleImage : Int,
