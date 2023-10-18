@@ -49,7 +49,7 @@
             android:name=".Pelatihan.KonfirmasiPelatihanActivity"
             android:exported="false" />
         <activity
-            android:name=".Pelatihan.JobActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Pelatihan.DetailPelatihanActivity"
@@ -64,7 +64,7 @@
             android:name=".Pelatihan.DaftarKerjaActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Pelatihan.JobActivity"
             android:exported="true"
             android:label="@string/title_activity_main">
             <intent-filter>

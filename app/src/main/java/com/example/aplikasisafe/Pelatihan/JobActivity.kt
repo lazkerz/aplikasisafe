@@ -17,7 +17,7 @@ class JobActivity : AppCompatActivity() {
     lateinit var desKerjaPt : Array<String>
 
 
-    @SuppressLint("MissingInflatedId")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_job)
@@ -51,24 +51,19 @@ class JobActivity : AppCompatActivity() {
             "PT Suka Maju",
             "PT Aman Jaya"
         )
-
-        kerjaViewImage = findViewById(R.id.title_kerja)
+        // Inisialisasi RecyclerView
+        kerjaViewImage = findViewById(R.id.kerjaRecyclerView)
         kerjaViewImage.layoutManager = LinearLayoutManager(this)
-        kerjaViewImage.setHasFixedSize(true)
 
-        kerjaArrayListen = arrayListOf<CariKerja>()
-        kerjaArrayListed = arrayListOf<CariKerja>()
-        getUserKerja()
-
-    }
-
-    private fun getUserKerja() {
-        for(i in imageKerjaPt.indices){
+        // Inisialisasi ArrayList yang akan digunakan untuk RecyclerView
+        kerjaArrayListen = ArrayList()
+        for (i in imageKerjaPt.indices) {
             val cariKerja = CariKerja(imageKerjaPt[i], namaKerjaPt[i], desKerjaPt[i])
-            kerjaArrayListed.add(cariKerja)
             kerjaArrayListen.add(cariKerja)
         }
-        kerjaViewImage.adapter = KerjaAdapter(kerjaArrayListed)
-        kerjaViewImage.adapter = KerjaAdapter(kerjaArrayListen)
+
+        // Inisialisasi adapter
+        val adapter = KerjaAdapter(kerjaArrayListen)
+        kerjaViewImage.adapter = adapter
     }
 }
