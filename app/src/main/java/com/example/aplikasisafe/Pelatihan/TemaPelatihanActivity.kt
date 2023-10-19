@@ -1,15 +1,18 @@
 package com.example.aplikasisafe.Pelatihan
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.aplikasisafe.Pelatihan.PilihanPelatihanActivity
+import com.example.aplikasisafe.Pelatihan.TemaAdapter
+import com.example.aplikasisafe.Pelatihan.TemaPelatihan
 import com.example.aplikasisafe.R
 
 class TemaPelatihanActivity : AppCompatActivity() {
     private lateinit var LatihanViewImage: RecyclerView
     private lateinit var LatihanArrayListen: ArrayList<TemaPelatihan>
-    private lateinit var LatihanArrayListed: ArrayList<TemaPelatihan>
     lateinit var imagePelatihanuy: Array<Int>
     lateinit var namaPelatihanuy: Array<String>
     lateinit var deskPelatihan: Array<String>
@@ -62,5 +65,12 @@ class TemaPelatihanActivity : AppCompatActivity() {
         // Inisialisasi adapter
         val adapter = TemaAdapter(LatihanArrayListen)
         LatihanViewImage.adapter = adapter
+
+        // Tambahkan listener klik ke adapter
+        adapter.setItemClickListener { position ->
+            // Start aktivitas baru ketika CardView diklik
+            val intent = Intent(this, PilihanPelatihanActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

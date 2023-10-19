@@ -17,6 +17,7 @@ import com.example.aplikasisafe.databinding.FragmentHomeBinding
 import com.example.aplikasisafe.model.HomeModel
 import com.example.aplikasisafe.potensi.PotensiActivity
 
+
 class HomeFragment : Fragment() {
 
     private lateinit var _binding: FragmentHomeBinding
@@ -42,6 +43,7 @@ class HomeFragment : Fragment() {
             val intent = Intent(activity, JobActivity::class.java)
             startActivity(intent)
         }
+
 
         menu2.setOnClickListener {
             // Tindakan saat tombol diklik

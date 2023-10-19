@@ -11,6 +11,14 @@ import com.example.aplikasisafe.R
 class TemaAdapter(private val temaList: ArrayList<TemaPelatihan>) :
     RecyclerView.Adapter<TemaAdapter.TemaHolder>() {
 
+    private var itemClickListener: ((Int) -> Unit)? = null
+
+    // Fungsi untuk menetapkan listener klik
+    fun setItemClickListener(listener: (Int) -> Unit) {
+        itemClickListener = listener
+    }
+
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TemaHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.pelatihan_item, parent, false)
         return TemaHolder(itemView)
