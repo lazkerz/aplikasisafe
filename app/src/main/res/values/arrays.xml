@@ -84,6 +84,18 @@
         <item>@drawable/img_post4</item>
     </integer-array>
 
+    <string-array name="lomba">
+        <item>Lomba Mural</item>
+        <item>Lomba Cipta Puisi</item>
+        <item>Lomba Fotography</item>
+    </string-array>
+
+    <integer-array name="imglomba">
+        <item>@drawable/lomba</item>
+        <item>@drawable/lomba2</item>
+        <item>@drawable/lomba3</item>
+    </integer-array>
+
 
     <string-array name="data_pt">
         <item>PT Mencari Aman</item>

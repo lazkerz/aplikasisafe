@@ -1,9 +1,11 @@
 package com.example.aplikasisafe.adapters
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.aplikasisafe.Pelatihan.DetailPelatihanActivity
 import com.example.aplikasisafe.databinding.HomeItemBinding
 import com.example.aplikasisafe.databinding.MateriItemBinding
 import com.example.aplikasisafe.model.HomeModel
@@ -26,6 +28,11 @@ class MateriAdapter(private val list: List<MateriModel>, private val context:Con
             with(list[position]) {
                 binding.materi.text = this.materi
                 binding.desc.text = this.desc
+            }
+            binding.root.setOnClickListener {
+                val context = holder.itemView.context
+                val intent = Intent(context, DetailPelatihanActivity::class.java)
+                context.startActivity(intent)
             }
         }
     }
